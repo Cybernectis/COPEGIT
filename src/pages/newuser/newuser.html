@@ -1,0 +1,139 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+	<ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title >New Patient</ion-title>
+	<ion-buttons right>
+      <button ion-button outline item-end icon-start color="light">
+		<ion-icon name="star"></ion-icon>
+        Save
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+ 
+	  <form (ngSubmit)="logForm()">
+		  <ion-card >
+		  <ion-card-header>
+			Patient Details
+		  </ion-card-header>
+
+		  <ion-list>
+		  <ion-item>
+			<ion-label floating>Patient Name</ion-label>
+			<ion-input type="text"></ion-input>
+		  </ion-item>
+
+		  <ion-item>
+			<ion-label floating>Place</ion-label>
+			<ion-input type="text"></ion-input>
+		  </ion-item>
+		  
+		  <ion-item>
+			<ion-label floating>Mobile No.</ion-label>
+			<ion-input type="number"></ion-input>
+		  </ion-item>
+		  
+		  <ion-item>
+			<ion-label floating>Age</ion-label>
+			<ion-input type="number"></ion-input>
+		  </ion-item>
+		  
+		  <ion-item>
+			<ion-label>Gender</ion-label>
+			<ion-select>
+			  <ion-option value="M" selected="true">Male</ion-option>
+			  <ion-option value="F">Female</ion-option>
+			</ion-select>
+		  </ion-item>
+		   </ion-list>
+		  </ion-card>
+		  
+		  <ion-card >
+		  <ion-card-header>
+			Doctor Details
+		  </ion-card-header>
+
+		  <ion-list>
+		  
+		  <ion-item>
+			<ion-label floating>Doctor Name</ion-label>
+			<ion-input type="text"></ion-input>
+		  </ion-item>
+		  </ion-list>
+		  </ion-card>
+		  
+		  <ion-card >
+		  <ion-card-header>
+			Product Details
+		  </ion-card-header>
+
+		  <ion-list>
+		  
+		  
+		  
+		   <ion-item>
+			<ion-label>Select Product</ion-label>
+			<ion-select>
+			  <ion-option value="M">Product 1</ion-option>
+			  <ion-option value="F">Product 2</ion-option>
+			  <ion-option value="F">Product 3</ion-option>
+			</ion-select>
+		   </ion-item>
+			  
+		   <ion-item>
+			<ion-label floating>Rx Duration (Months)</ion-label>
+			<ion-input type="number"></ion-input>
+		   </ion-item>
+		   
+		   <ion-item>
+			<ion-label floating>1st Dose Purchase Date</ion-label>
+			<ion-input type="text"></ion-input>
+		   </ion-item>
+		   
+		   <ion-item>
+			<ion-label floating>Carts</ion-label>
+			<ion-select>
+			  <ion-option value="1">1</ion-option>
+			  <ion-option value="3">3</ion-option>
+			  <ion-option value="6">6</ion-option>
+			</ion-select>
+		   </ion-item>
+		   
+		  </ion-list>
+		  </ion-card>
+		  
+		  <ion-card >
+		  <ion-card-header>
+			Upload Section
+		  </ion-card-header>
+
+		  <ion-list>
+		  
+		  
+		  
+		   <ion-item>
+			<ion-label>Dr's Perscription*</ion-label>
+			<ion-input type="file"></ion-input>
+		   </ion-item>
+			  
+		   <ion-item>
+			<ion-label>Invoise Copy*</ion-label>
+			<ion-input type="file"></ion-input>
+		   </ion-item>
+		   
+		  </ion-list>
+		  </ion-card>
+		  
+		</form>
+	  
+	
+</ion-content>

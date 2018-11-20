@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+	<ion-buttons left>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title >Dashboard</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-grid>
+	  <ion-row>
+		<ion-col col-6 >
+			<button class="dash-btn c1 animated zoomInDown" (click)="goToNewUser()">
+				<ion-icon name="person-add"></ion-icon><br/>
+				New Patient
+			</button>
+		</ion-col>
+		<ion-col col-6 >
+		  <button class="dash-btn c2 animated zoomInDown" (click)="goToUsersList()">
+		  <ion-icon name="person"></ion-icon><br/>
+		  Old Patients
+		  </button>
+		</ion-col>
+	  </ion-row>
+	  <ion-row>
+		<ion-col col-6 >
+		  <button class="dash-btn c3 animated zoomInUp" (click)="compingSoon()">
+		  <ion-icon name="medkit"></ion-icon><br/>
+		  Dispensing
+		  </button>
+		</ion-col>
+		<ion-col col-6>
+			<button class="dash-btn c4 animated zoomInUp" (click)="compingSoon()">
+			<ion-icon name="navigate"></ion-icon><br/>
+			Pharmacovigilance
+		  </button>
+		</ion-col>
+	  </ion-row>
+	</ion-grid>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: 'FranklinGothic-Medium';
+  src: url('FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),  url('FranklinGothic-Medium.woff') format('woff'), url('FranklinGothic-Medium.ttf')  format('truetype'), url('FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+div,p,h1,h2,h3,h4,span,strong {
+	 font-family: 'FranklinGothic-Medium' !important;
+	 letter-spacing: 1px;
+}
